@@ -1,0 +1,75 @@
+.board-header {
+  margin-bottom: 32px;
+  max-width: 640px;
+}
+
+.eyebrow {
+  display: inline-block;
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  color: var(--amber);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.board-header h1 {
+  font-size: 2.4rem;
+  color: var(--board-text);
+  margin-bottom: 10px;
+}
+
+.board-subtitle {
+  color: var(--board-text-soft);
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.filter-bar {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr 1fr;
+  gap: 10px;
+  align-items: center;
+  background: var(--board-raised);
+  border: 1px solid rgba(231,239,233,0.12);
+  border-radius: 4px;
+  padding: 14px;
+  margin-bottom: 36px;
+}
+
+.filter-bar input,
+.filter-bar select {
+  padding: 10px 11px;
+  background: var(--board);
+  border: 1px solid rgba(231,239,233,0.16);
+  border-radius: 3px;
+  color: var(--board-text);
+  font-size: 0.85rem;
+  font-family: var(--font-body);
+}
+
+.filter-actions {
+  grid-column: 1 / -1;
+  display: flex;
+  gap: 10px;
+  justify-content: flex-end;
+  margin-top: 2px;
+}
+
+@media (max-width: 900px) {
+  .filter-bar { grid-template-columns: 1fr 1fr; }
+}
+
+.pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  margin-top: 40px;
+}
+
+.pagination-status {
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  color: var(--board-text-soft);
+}

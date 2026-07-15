@@ -1,0 +1,62 @@
+.auth-container {
+  display: flex;
+  justify-content: center;
+}
+
+.auth-card {
+  width: 100%;
+  max-width: 420px;
+  background: var(--paper);
+  color: var(--ink);
+  border-radius: var(--radius-card);
+  padding: 36px 32px;
+  box-shadow: 0 14px 30px var(--paper-shadow);
+}
+
+.auth-card h1 {
+  color: var(--ink);
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+}
+
+.auth-card .field label {
+  color: var(--ink-soft);
+}
+
+.auth-card .field input,
+.auth-card .field select {
+  background: #fff;
+  border: 1px solid var(--thread);
+  color: var(--ink);
+}
+
+.auth-switch {
+  margin-top: 20px;
+  font-size: 0.88rem;
+  color: var(--ink-soft);
+  text-align: center;
+}
+.auth-switch a { color: var(--amber-dark); font-weight: 600; }
+
+.role-toggle {
+  display: flex;
+  gap: 8px;
+}
+
+.role-option {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid var(--thread);
+  background: #fff;
+  border-radius: 3px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--ink-soft);
+  cursor: pointer;
+}
+
+.role-option.active {
+  border-color: var(--amber-dark);
+  background: rgba(232, 163, 61, 0.14);
+  color: var(--amber-dark);
+}
